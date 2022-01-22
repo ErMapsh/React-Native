@@ -18,3 +18,13 @@ To use the native stack navigator, we need to install @react-navigation/native-s
 ``` js 
     npm install @react-navigation/native-stack
 ```
+
+
+## Navigation Prop(Note):
+- only our screen components are provided with the navigation prop.
+- It's important to note that this only happens if the screen is rendered as a route by React Navigation.
+
+This prop will be passed to all screens, and it can be used for the following:
+- dispatch will send an action up to the router
+- navigate, goBack, etc are available to dispatch actions in a convenient way
+- Navigators can also accept a navigation prop, which they should get from the parent navigator, if there is one
