@@ -8,10 +8,7 @@ import {
   Dimensions,
 } from 'react-native';
 
-
-
 export default function HomeScreen({navigation}) {
-
   // const handleOnClick = CompoName => {
   //   console.log(navigation);
   //   // console.log(CompoName);
@@ -30,7 +27,7 @@ export default function HomeScreen({navigation}) {
       userPassword: password,
     });
     // console.log("Data:", name, email, password);
-  }
+  };
 
   return (
     // <View style={styles.container}>
@@ -55,21 +52,24 @@ export default function HomeScreen({navigation}) {
       <TextInput
         style={Style1.input}
         placeholder="Enter Your Name"
-        name="name"
-        onChange={val => setname(val)}
+        // value={name}
+        name= 'name'
+        onChangeText={val => setname(val)}
       />
       <TextInput
         style={Style1.input}
         placeholder="Enter Your Email"
-        name="email"
-        onChange={val => setemail(val)}
+        // value={email}
+        name= 'email'
+        onChangeText={val => setemail(val)}
       />
       <TextInput
         style={Style1.input}
         placeholder="Enter Your Password"
         secureTextEntry={true}
-        name="password"
-        onChange={val => setpassword(val)}
+        // value={password}
+        name= 'password'
+        onChangeText={val => setpassword(val)}
       />
       <TouchableOpacity onPress={() => SubmitData()}>
         <Text style={Style1.submitBtn}>SUBMIT</Text>
