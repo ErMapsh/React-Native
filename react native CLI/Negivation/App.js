@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { NavigationContainer } from '@react-navigation/native'; // import Navigation
-import { createNativeStackNavigator } from '@react-navigation/native-stack'; // import stack naviator
+import {NavigationContainer} from '@react-navigation/native'; // import Navigation
+import {createNativeStackNavigator} from '@react-navigation/native-stack'; // import stack naviator
 
 // -----importing component----
 import HomeScreen from './src/screens/HomeCompo';
@@ -18,10 +18,12 @@ function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ headerStyle: { backgroundColor: 'lightblue' } }}
+          options={{headerStyle: {backgroundColor: 'lightblue'}}}
         />
 
-        {/* <Stack.Screen
+        {/* ------part1----------- */}
+        {/*
+         <Stack.Screen
           name="Compo1"
           component={Compo1}
           options={{headerStyle: {backgroundColor: 'blue'}}}
@@ -29,7 +31,8 @@ function App() {
         <Stack.Screen name="Compo2" component={Compo2} /> */}
 
         {/* part2 of  Nevigation*/}
-        <Stack.Screen name= 'Profile' component={Profile} />
+        <Stack.Screen name="Profile" component={Profile} />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );

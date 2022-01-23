@@ -8,28 +8,44 @@ import {
   Dimensions,
 } from 'react-native';
 
+import { useNavigation, useRoute } from '@react-navigation/native';
+
 export default function HomeScreen({navigation}) {
+  //  --Part1---
   // const handleOnClick = CompoName => {
   //   console.log(navigation);
   //   // console.log(CompoName);
   //   navigation.navigate(CompoName);
   // };
+  
+  //---part3---
+  const navigationHook = useNavigation();
+  // console.log(navigationHook)// navigationHook and navigation are same
 
+  // ---part2---
   // State Variable for storing information
   const [name, setname] = useState('');
   const [email, setemail] = useState('');
   const [password, setpassword] = useState('');
-
   const SubmitData = () => {
-    navigation.navigate('Profile', {
+    navigationHook.navigate('Profile', {
       userName: name,
       userEmail: email,
       userPassword: password,
     });
-    // console.log("Data:", name, email, password);
-  };
+    // navigation.navigate('Profile', {
+    //   userName: name,
+    //   userEmail: email,
+    //   userPassword: password,
+    // });
 
+  // console.log("Data:", name, email, password);
+  };
+  
   return (
+
+    // --Part1---
+
     // <View style={styles.container}>
     //   <Text>Enter Your Name:</Text>
     //   <TextInput style={Style1.input} />
@@ -46,6 +62,9 @@ export default function HomeScreen({navigation}) {
     //     <Text>Compo2</Text>
     //   </TouchableOpacity>
     // </View>
+
+
+    // --part2--
 
     <View style={styles.container}>
       <Text style={Style1.text}>Enter Your Information</Text>
@@ -75,6 +94,8 @@ export default function HomeScreen({navigation}) {
         <Text style={Style1.submitBtn}>SUBMIT</Text>
       </TouchableOpacity>
     </View>
+
+
   );
 }
 
