@@ -45,5 +45,5 @@ export default function App() {
 }
 
 const BottomIcon = props => {
-  return <Ionicons name={props.name} />;
+  return <Ionicons name={props.name} size={25}/>;
 };

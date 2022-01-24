@@ -6,6 +6,13 @@ const style = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
 
+    },
+    btn:{
+        padding: 15,
+        backgroundColor: 'lightblue',
+        fontSize: 25,
+        width: '30%',
+        margin: 14,
     }
 })
 
