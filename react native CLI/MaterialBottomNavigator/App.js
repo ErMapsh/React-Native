@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 
-// importing bottom
+// importing Material bottom Navigator
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 
 // importing screens
