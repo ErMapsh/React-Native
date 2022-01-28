@@ -22,7 +22,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         {splash && <Stack.Screen name="SplashScreen" component={SplashScreen} options={{headerShown: false}} />}
-        <Stack.Screen name="BottomNavigater" component={BottomNavigater} />
+        <Stack.Screen name="BottomNavigater" component={BottomNavigater} options={{headerShown: false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -5,6 +5,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import HomeScreen from '../Screens/HomeScreen';
 import Profile from '../Screens/Profile';
 import Setting from '../Screens/Setting';
+import { StatusBar } from 'react-native';
 
 
 export default function BottomNavigation() {
